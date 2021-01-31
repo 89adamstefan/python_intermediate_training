@@ -15,9 +15,16 @@ def main():
     cats.append(cat_object3)
     cats.append(cat_object4)
 
-    for cat in cats:
-        sound = cat.make_sound()
-        print(sound)
+    # for cat in cats:
+    #     sound = cat.make_sound()
+    #     print(sound)
+
+    cat_object.eat_mouse()
+    cat_object.eat_mouse()
+    cat_object.eat_mouse()
+    print("Now next cat was eaten mouse!")
+    cat_object2.eat_mouse()
+
 
 
 if __name__ == "__main__":
