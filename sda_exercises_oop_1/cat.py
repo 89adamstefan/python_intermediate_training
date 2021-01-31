@@ -3,6 +3,6 @@ class Cat:
         self.name = name
 
     def make_sound(self):
-        return f'Name is {self.name} sound Meow!'
+        return f'Name is {self.name} and make sound Meow!'
 
 
