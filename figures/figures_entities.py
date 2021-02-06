@@ -1,10 +1,12 @@
 from abc import ABC, abstractmethod
 from math import pi
 
+
 class Figure(ABC):
     @abstractmethod
     def get_area(self):
         pass
+
 
     @staticmethod
     def count_area(figures:list) -> float:
