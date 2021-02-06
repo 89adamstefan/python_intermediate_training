@@ -9,6 +9,8 @@ def main():
     print(traingle.get_area())
     print(rectangle.get_area())
 
+    area = Figure.count_area([circle, traingle, rectangle])
+    print(area)
 
 
 
