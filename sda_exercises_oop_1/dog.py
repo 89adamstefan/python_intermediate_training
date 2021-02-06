@@ -1,6 +1,12 @@
-class Dog:
+from sda_exercises_oop_1.animal import Animal
+
+
+class Dog(Animal):
+    def drink(self):
+        print("Dog drink vodka")
+
     def __init__(self, name: str, sound='Woof! Woof!'):
-        self.name = name
+        super().__init__(name)
         self.sound = sound
 
     def make_sound(self) -> str:

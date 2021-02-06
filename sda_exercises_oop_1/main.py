@@ -1,6 +1,7 @@
 from sda_exercises_oop_1.car import Car
 from sda_exercises_oop_1.cat import Cat
 from sda_exercises_oop_1.dog import Dog
+from sda_exercises_oop_1.vet import Vet
 
 
 def main():
@@ -38,11 +39,19 @@ def main():
     # print("Now the next cat will eat the mouse!")
     # cat_object2.eat_mouse()
 
-    car = Car()
-    print(car.move())
-
+    # car = Car()
+    # print(car.move())
+    #
     cat = Cat("Mruczek")
-    print(cat.move())
+    # print(cat.move())
+    dog = Dog("Burek")
+
+    print(Vet.say_cat_hello(cat))
+    Vet.say_dog_hello(dog)
+
+    vet = Vet()
+    vet.say_dog_hello(dog)
+    vet.say_hello(cat)
 
 
 
