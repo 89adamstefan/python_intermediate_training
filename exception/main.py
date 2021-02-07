@@ -1,4 +1,4 @@
-from exception.exercises import case_1, case_2, case_3, case_4
+from exception.exercises import case_1, case_2, case_3, case_4, case_4_v2
 
 
 def main():
@@ -14,7 +14,7 @@ def main():
     dictionary = {
         'products': ["milk", "bread"]
     }
-    case_4(dictionary)
+    case_4_v2(dictionary)
 
 
     print("Finish")
