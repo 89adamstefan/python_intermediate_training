@@ -54,4 +54,22 @@ def case_4_v2(dictionary: dict):
         print("Key does not exist or list is empty")
 
 def case_6():
-    raise NotImplementedError("Sovled in future")
+    raise NotImplementedError("Solved in future")
+
+def case_7():
+    fd = None
+    try:
+        fd = open("C:\\python_test.txt")
+    except IOError as ioe:
+        print(f'Exception caught {ioe.args}')
+    finally:
+        if fd:
+            print("File descriptor closing")
+            fd.close()
+
+def case_7_v2():
+    try:
+        with open("C:\\python_test.txt") as fd: # "with" wywołuje context manager
+            print("File is open")
+    except IOError as ioe:
+        print(f'Exception caught {ioe.args}')
