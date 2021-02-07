@@ -14,3 +14,8 @@ def case_1():
         result = list_of_numbers[6]
     except (IndexError, Exception) as e:
         print(f'Exception cought by tuple {e.args}')
+
+def case_2(name: str):
+    if len(name) <= 0:
+        raise ValueError('String is empty!')
+    print(f'Given name is: {name}')

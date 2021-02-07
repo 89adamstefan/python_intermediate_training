@@ -1,11 +1,12 @@
-from exception.exercises import case_1
+from exception.exercises import case_1, case_2
 
 
 def main():
     print("Start app")
-
-    case_1()
-
+    try:
+        case_2("")
+    except ValueError as ve:
+        print(f'ValueError return {ve.args}')
     print("Finish")
 
 
