@@ -18,10 +18,12 @@ def case_1():
     except (IndexError, Exception) as e:
         print(f'Exception cought by tuple {e.args}')
 
+
 def case_2(name: str):
     if len(name) <= 0:
         raise ValueError('String is empty!')
     print(f'Given name is: {name}')
+
 
 def case_3(number: int, divisor: int) -> float:
     result = 0
@@ -32,4 +34,15 @@ def case_3(number: int, divisor: int) -> float:
         result = sys.float_info.max
         # result = float(sys.maxsize)
     return result
+
+
+def case_4(dictionary: dict):
+    key = 'items'
+    try:
+        items: list = dictionary[key]
+        for item in items:
+            print(item)
+    except KeyError as ke:
+        print(f'Key {key} not found, more information {ke.args}')
+
 

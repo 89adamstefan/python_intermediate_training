@@ -1,4 +1,4 @@
-from exception.exercises import case_1, case_2, case_3
+from exception.exercises import case_1, case_2, case_3, case_4
 
 
 def main():
@@ -8,8 +8,13 @@ def main():
     # except ValueError as ve:
     #     print(f'ValueError return {ve.args}')
 
-    result = case_3(10, 0)
-    print(result)
+    # result = case_3(10, 0)
+    # print(result)
+
+    dictionary = {
+        'products': ["milk", "bread"]
+    }
+    case_4(dictionary)
 
 
     print("Finish")
