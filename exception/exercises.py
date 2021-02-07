@@ -53,4 +53,5 @@ def case_4_v2(dictionary: dict):
     if not items:
         print("Key does not exist or list is empty")
 
-
+def case_6():
+    raise NotImplementedError("Sovled in future")

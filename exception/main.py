@@ -1,4 +1,4 @@
-from exception.exercises import case_1, case_2, case_3, case_4, case_4_v2
+from exception.exercises import case_1, case_2, case_3, case_4, case_4_v2, case_6
 
 
 def main():
@@ -10,11 +10,16 @@ def main():
 
     # result = case_3(10, 0)
     # print(result)
+    #
+    # dictionary = {
+    #     'products': ["milk", "bread"]
+    # }
+    # case_4_v2(dictionary)
 
-    dictionary = {
-        'products': ["milk", "bread"]
-    }
-    case_4_v2(dictionary)
+    try:
+        case_6()
+    except NotImplementedError as nie:
+        print(f'Exception caught {nie.args}')
 
 
     print("Finish")
