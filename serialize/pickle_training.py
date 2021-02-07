@@ -10,6 +10,7 @@ def pickle_write(items: list):
     except (IOError, Exception) as e:
         print(f'Exception while writing pickle format, info {e.args}')
     print("Finish!")
+
 def pickle_read():
     print("Pickle read start!")
     string_list = []

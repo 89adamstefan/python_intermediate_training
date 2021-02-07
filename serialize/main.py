@@ -1,4 +1,4 @@
-from serialize.csv_training import csv_write
+from serialize.csv_training import csv_write, csv_read
 from serialize.pickle_training import pickle_write, pickle_read
 
 
@@ -16,6 +16,9 @@ def main():
         ("Jarosław", "Kot", 56011218822)
     ]
     csv_write(users)
+
+    returned_users = csv_read()
+    print(returned_users)
 
 
 if __name__ == '__main__':
