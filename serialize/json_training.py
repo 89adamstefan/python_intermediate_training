@@ -9,6 +9,17 @@ def json_to_file():
 
     try:
         with open("./data.json", "w") as fd:
-            json.dump(json_list, fd)
+            json.dump(json_list, fd, indent=2)
     except (IOError, Exception) as e:
         print(f'Problem with writing to file, more info: {e.args}')
+
+def json_from_file():
+    json_list = []
+
+    try:
+        with open("./data.json", "r") as fd:
+            json_list = json.load(fd)
+    except (IOError, Exception) as e:
+        print(f'Problem with writing to file, more info: {e.args}')
+
+    return json_list
