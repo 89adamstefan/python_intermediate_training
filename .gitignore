@@ -4,3 +4,4 @@ __pycache__/
 venv/
 data.pickle
 data.csv
+*json
