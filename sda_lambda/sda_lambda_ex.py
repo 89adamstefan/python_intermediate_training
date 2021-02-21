@@ -56,4 +56,14 @@ def exercises_4():
     print("After")
     print(list(map(lambda number: number * 2, randoms_list)))
 
+from random import randint
 
+def exercises_5():
+
+    number_list = [int(randint(100, 200)) for item in range(20)]
+    print("Before")
+    print(number_list)
+    print("Ascending sort")
+    print(sorted(number_list))
+    print("Descending sort")
+    print(sorted(number_list, reverse=True))
