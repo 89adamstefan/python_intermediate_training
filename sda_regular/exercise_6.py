@@ -5,12 +5,12 @@
 import re
 
 
-def exercise_5():
-    print("Enter some date with format dd.mm.yyyy: ")
+def exercise_6():
+    print("Enter correct series number: ")
     value = input()
 
-    expression = '[0-9]{2}\.[0-9]{2}\.[0-9]{4}'
+    expression = '[A-Z]{3}[0-9]{5}[a-z]{1}[A-Z]{1}'
     if re.fullmatch(expression, value):
-        print("Date is correct")
+        print("Series number is correct")
     else:
-        print("Date is incorrect")
+        print("Series number is incorrect")
