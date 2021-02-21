@@ -57,13 +57,3 @@ def exercises_4():
     print(list(map(lambda number: number * 2, randoms_list)))
 
 
-def main():
-    exercises_1()
-    exercises_2_3()
-    exercises_4()
-
-
-
-
-if __name__ == '__main__':
-    main()
